@@ -1,0 +1,73 @@
+/* Arquivo de estilo do projeto */
+
+body {
+    background: skyblue ;
+    color: black;
+    font-family: sans-serif, Arial, Verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+}
+
+button {
+    width: 80%;
+    background: black;
+    color: aliceblue;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: grab;
+}
+
+button:hover {
+    background: darkred;
+}
+
+.limpar {
+    background: purple;
+}
+
+.limpar:hover {
+    background: darkred;
+}
+
+.formulario {
+    background: whitesmoke;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+#resultado {
+    margin-top: 24px;
+    padding: 16px;
+    background: whitesmoke;
+    border-left: 4px solid blue;
+    display: none;
+}

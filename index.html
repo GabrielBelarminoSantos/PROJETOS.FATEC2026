@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <!-- favicon-->
+     <link rel = "icon" type = "image/png" href = "images/favicon.png">
+     <!-- CSS -->
+      <link rel = "stylesheet" href = "CSS/estilo.css">
+</head>
+<body>
+    <div class = "formulario">
+        <h2> Dados do paciente</h2>
+        <form id="formIMC" onsubmit="processaCalculo(event)">
+            <label for = "nome"> Nome Completo </label>
+            <input type = "text" id = "nome" placeholder = "Ex: Lucas Silva" minlength = "3" maxlength = "50" required title = "Infome seu nome completo">
+
+            <label for ="nascimento"> Data de Nascimento</label>
+            <input type = "date" id = "nascimento" required>
+
+            <label for = "peso"> Peso em kg </label>
+            <input Type = "number" id = "peso" step = "0.1" min = "0" max = "300" placeholder = "EX: 70.8" title = "Informe o seu peso em kg" required >
+
+            <label for = "altura"> Altura em metros </label>
+            <input type = "number" id = "altura" step="0.01" min = "0.90" max = "2.80" placeholder = "Ex: 1.55" title = "Infome sua altura em metros" required >
+
+            <button type = "submit"> Calcular o Resultado </button>
+            <button type = "reset" class="limpar" > Limpar </button>
+        </form>
+    </div>
+
+    <div id = "resultado">
+
+    </div>    
+    <!-- Carregando o JS -->
+     <script src = "js/script.js"></script>
+</body>
+
+</html>
