@@ -5,7 +5,10 @@ O projeto inclui CSS e manipulação de campo via JS.
 
 > Curso Analise e Desenvolvimento de Sistemas - Fatec Itu
 
-## Tecnologias Utilizadas
+## ♨️ Tecnologias Utilizadas
 -HTML
 -CSS3
 -JAVASCRIPT (Vanilla JS)
+
+## licença
+Este projeto está licenciado sobre a **licença MIT**
