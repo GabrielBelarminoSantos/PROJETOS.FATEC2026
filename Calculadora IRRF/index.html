@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IR</title>
+    <!--Adicionando logo para o cabeçalho da pagina.-->
+    <link rel = "icon" type="image/png" href="IRlogo.png">
+    <!--Adicionando o css do cabeçalho.-->
+    <link rel ="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <form class="formulario" id="formulario" >
+        <h2>HOLERITE DIGITAL 2026</h2>
+        <label for="salarioBruto">Salario Bruto</label>
+        <input type="number" id="salarioBruto" step="0.01" min="0.00" max="50000.00" placeholder="5000.00" required title="Digite seu salario">
+
+        <label for="inss">Desconto INSS (Tabela 2026)</label>
+        <input type="number" id="inss" min="121.57" max="988.09" placeholder="121.57" disabled>
+        
+        <label for="irrf">Imposto de Renda (Isenção até 5000.00)</label>
+        <input type="number" id="irrf" min="0.00" max="6603.27" placeholder="0.00" disabled>
+
+        <button type="button" id = "botaoCalcular">Calcular</button>
+        <button type="button" id="botaoLimpar" class="limpar">Limpar</button>
+    
+
+        <div id="resultado"></div>
+
+    
+    </form>
+
+
+    <!--Carregando o js fora do formulario-->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
