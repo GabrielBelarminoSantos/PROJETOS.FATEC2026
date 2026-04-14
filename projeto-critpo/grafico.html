@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/grafic.css">
+    <title>grafico</title>
+</head>
+<body>
+    
+
+    <div class="sidebar">
+            <div class="menu-icon">☰</div>
+
+            <a href="index.html">🏠 Início</a>
+            <a href="grafico.html">📊 Gráfico</a>
+
+        </div>
+
+        
+    </div>
+    <section>
+        
+        <h2>Criptomoeda</h2>
+        
+        <table class="table">  
+            <tr data-coin="bitcoin"><td>Bitcoin <img src="Images/Bitcoin.png"></td></tr>
+            <tr data-coin="ethereum"><td>Ethereum <img src="Images/Ethereum.png"></td></tr>
+            <tr data-coin="tether"><td>Tether <img src="Images/Tether.png"></td></tr>
+            <tr data-coin="binancecoin"><td>BNB <img src="Images/Bnb.png"></td></tr>
+            <tr data-coin="ripple"><td>XRP <img src="Images/Xrp.png"></td></tr>
+            <tr data-coin="usd-coin"><td>USDC <img src="Images/Usdc.png"></td></tr>
+            <tr data-coin="solana"><td>SOL <img src="Images/Solana.png"></td></tr>
+            <tr data-coin="cardano"><td>ADA <img src="Images/Ada.png"></td></tr>
+            <tr data-coin="dogecoin"><td>DOGE <img src="Images/Doge.png"></td></tr>
+            <tr data-coin="tron"><td>TRX <img src="Images/TRX.png"></td></tr>
+            <tr data-coin="polkadot"><td>DOT <img src="Images/Dot.png"></td></tr>
+            <tr data-coin="matic-network"><td>MATIC <img src="Images/Matic.png"></td></tr>
+            <tr data-coin="litecoin"><td>LTC <img src="Images/Ltc.png"></td></tr>
+            <tr data-coin="chainlink"><td>LINK <img src="Images/Link.png"></td></tr>
+            <tr data-coin="avalanche-2"><td>AVAX <img src="Images/Avax.png"></td></tr>
+            <tr data-coin="stellar"><td>XLM <img src="Images/Xlm.png"></td></tr>
+            <tr data-coin="cosmos"><td>ATOM <img src="Images/Atom.png"></td></tr>
+            <tr data-coin="filecoin"><td>FIL <img src="Images/Fil.png"></td></tr>
+        </table>
+        
+    </section>
+    
+    <div class="container">
+        <div class="quadro">
+            <button data-days="1" class="botaoquadro">24 hrs</button>
+            <button data-days="7" class="botaoquadro">7 dias</button>
+            <button data-days="30" class="botaoquadro">30 dias</button>
+            <button data-days="120" class="botaoquadro">120 dias</button>
+            <button data-days="365" class="botaoquadro">1 ano</button>
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+    
+    <div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="JS/grafic.js"></script>
+        
+</body>
+</html>

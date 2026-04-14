@@ -1,0 +1,22 @@
+# 🪙 PROJETO_CRIPTO
+
+projeto desenvolvido com **HTML, css e javascript** para avaliação na matéria linguagem de programação lecionada pelo professor Ricardo Leme, na instituição FATEC-ITU.
+O projeto tem o objetivo de, através de uma solicitação do usuário, fornecer alguns dados comparativos entre criptomoedas e moedas fiduciarias solicitados pelo usuário. Além disto, contém um gráfico mostrando a ocilação das criptos usando o dollar como referência.
+
+# 👨🏻‍🎓 ALUNOS
+
+O projeto foi desenvolvido pelos alunos:
+Gabriel Belarmino dos Santos
+Richard Rafael Sales
+Marcelo Conceição
+    Do segundo semestre do curso de analise e desenvolvimentos de sistemas na FATEC-ITU
+
+> Curso Analise e Desenvolvimento de Sistemas - Fatec Itu
+
+## 📝 Tecnologias Utilizadas
+-HTML
+-CSS3
+-JAVASCRIPT (Vanilla JS)
+
+## licença
+Este projeto está licenciado sobre a **licença MIT**

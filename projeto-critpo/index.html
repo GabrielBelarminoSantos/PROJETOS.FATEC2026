@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CriptoSearch</title>
+    <link rel="icon" type="image/png" href="Images/crypto-currency-bitcoins-by-Vexels.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- FORM -->
+        <form class="formulario" id="Formcripto">
+
+            <h2>Monitorador de Cripto</h2>
+
+            <!-- FIAT -->
+            <label for="currency">FIAT:</label>
+            <select id="currency">
+                <option value="usd">Dólar Americano (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="brl">Real Brasileiro (BRL)</option>
+                <option value="gbp">Libra Esterlina (GBP)</option>
+                <option value="jpy">Iene Japonês (JPY)</option>
+                <option value="cny">Yuan Chinês (CNY)</option>
+                <option value="cad">Dólar Canadense (CAD)</option>
+                <option value="mxn">Peso Mexicano (MXN)</option>
+                <option value="ars">Peso Argentino (ARS)</option>
+                <option value="clp">Peso Chileno (CLP)</option>
+                <option value="cop">Peso Colombiano (COP)</option>
+                <option value="chf">Franco Suíço (CHF)</option>
+                <option value="sek">Coroa Sueca (SEK)</option>
+                <option value="nok">Coroa Norueguesa (NOK)</option>
+                <option value="dkk">Coroa Dinamarquesa (DKK)</option>
+                <option value="pln">Zloty Polonês (PLN)</option>
+            </select>
+
+            <!-- CRYPTO -->
+            <label for="crypto">Criptomoeda:</label>
+            <select id="crypto">
+                <option value="bitcoin">Bitcoin (BTC)</option>
+                <option value="ethereum">Ethereum (ETH)</option>
+                <option value="tether">Tether (USDT)</option>
+                <option value="binancecoin">BNB</option>
+                <option value="ripple">XRP</option>
+                <option value="usd-coin">USDC</option>
+                <option value="solana">SOL</option>
+                <option value="cardano">ADA</option>
+                <option value="dogecoin">DOGE</option>
+                <option value="tron">TRX</option>
+                <option value="polkadot">DOT</option>
+                <option value="polygon">MATIC</option>
+                <option value="litecoin">LTC</option>
+                <option value="chainlink">LINK</option>
+                <option value="avalanche-2">AVAX</option>
+                <option value="stellar">XLM</option>
+                <option value="cosmos">ATOM</option>
+                <option value="filecoin">FIL</option>
+            </select>
+
+            <!-- RESULTADOS -->
+            <label>Preço Atual</label>
+            <input type="text" id="price" disabled>
+
+            <label>Variação 24H</label>
+            <input type="text" id="variation" disabled>
+
+            <label>Market Cap</label>
+            <input type="text" id="mktCap" disabled>
+
+            <label>Negociações 24H</label>
+            <input type="text" id="deal" disabled>
+
+            <!-- BOTÕES -->
+            <button type="button" id="calcular">Calcular</button>
+            <button type="reset" class="limpar">Limpar</button>
+
+        </form>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="menu-icon">☰</div>
+            <a href="#">🏠 Início</a>
+            <a href="grafico.html">📊 Gráfico</a>
+        </div>
+
+    </section>
+
+    <!-- HISTÓRICO -->
+  
+        <section class="container">
+            <h2>Registros de Pesquisa</h2>
+
+            <p id="emptyMessage" class="emptyMessage1">
+                Sem registros cadastrados no momento!
+            </p>
+
+            <div id="tableWrapper" class="tableWrapper1" hidden>
+                <table id="registros">
+
+                    <thead>
+                        <tr>
+                            <th>Moeda</th>
+                            <th>Cripto</th>
+                            <th>Preço Atual</th>
+                            <th>Variação</th>
+                            <th>Market Cap</th>
+                            <th>Negociações 24H</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaBody"></tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+    <!-- JS -->
+    <script src="JS/index.js"></script>
+
+</body>
+
+</html>
